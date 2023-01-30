@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的Title</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .dform{
+            width: 100%;
+            height: 800px;
+            background:url("images/login2.png");
+            background-size: 1500px;
+            background-repeat: no-repeat;
+        }
+        form{
+            width: 320px;
+            /*border: 1px solid #ccc;*/
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            position: absolute;
+            margin-top: 153px;
+            margin-left: 609px;
+            background-color: rgba(0,0,0,0.7);
+        }
+        ul,li{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        ul li{
+            height: 60px;
+            line-height: 63px;
+            font-size: 23px;
+        }
+        .right{
+            float: right;
+            width: 200px;
+            margin-top: 20px;
+            height: 23px;
+        }
+        .right:hover{
+            /*box-shadow: 1px 1px deeppink;*/
+            border: 3px solid deeppink;
+        }
+
+        .footer{
+            clear:both;
+            text-align: center;
+        }
+        .footer input{
+            width: 60px;
+            height: 28px;
+            margin-top: 18px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .footer input:hover{
+            cursor: pointer;
+            width: 70px;
+            height: 35px;
+            font-size: 25px;
+            line-height: 35px;
+            color: deeppink;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById("btn");
+            var username = document.getElementById("username");
+            var psd = document.getElementById("psd");
+            btn.onclick = function () {
+                if (username.value == "gjw" && psd.value == "123"){
+                window.open("login.html");
+                }else {
+                    alert("登录失败");
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="dform">
+        <form>
+            <ul>
+                <li style="color: white">用户名:<input class="right" type="text" id="username"></li>
+                <li style="color: white">密&nbsp;&nbsp;&nbsp;码：<input class="right" type="password" id="psd"></li>
+                </li>
+                <li class="footer">
+                    <input  type="submit" id="btn" value="登录">
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

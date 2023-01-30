@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+}
+html{
+    /* 自定义鼠标样式 */
+    cursor: url("../images/指针6.png"),pointer;
+}
+
+.buttom{
+    width: 500px;
+    height: 300px;
+    
+    border:10%;
+    
+    position: absolute;
+    left: 38%;
+    top: 35%;
+    
+    border-radius: 15px;
+    text-align: center;
+    
+}
+h1,h2{
+    font-family: "宋体";
+    color: aliceblue;
+}
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size: 18px;
+}
+
+/* .anniu{
+    background:linear-gradient(to right red,pink,blue); 
+} */
+/* 按钮样式 */
+.anniu button{
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #FFFFFF;
+    background:linear-gradient(45deg, #169deb, #be171fd0);
+
+
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+.anniu button:hover{
+    cursor: pointer;
+}
+
+
+#sp{
+    position: fixed;
+    z-index: -1;
+}
+/* 解决页面缩放视频不会缩放的问题 */
+@media(min-aspect-ratio:16/9){
+    #sp{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    #sp{
+        width: auto;
+        height: 100%;
+    }
+}
